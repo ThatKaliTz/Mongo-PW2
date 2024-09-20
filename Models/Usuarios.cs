@@ -16,9 +16,13 @@ namespace MongoApi.Models
 
         public string Apellido { get; set; }
 
-        [BsonElement("edad")]
+        [BsonElement("foto")]
 
-        public int Edad { get; set; }
+        public string Foto { get; set; }
+
+        [BsonElement("email")]
+
+        public string Email { get; set; }
 
         [BsonElement("user")]
 

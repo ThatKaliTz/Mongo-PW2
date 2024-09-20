@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace MongoApi.Models
 {
-    public class Usuario
+    public class Guia
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)] // Convierte automáticamente ObjectId a string
