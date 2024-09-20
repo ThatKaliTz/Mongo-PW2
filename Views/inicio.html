@@ -13,9 +13,9 @@
         async function obtenerUsuarios() {
             try {
                 fetch('http://localhost:5119/api/usuarios')
-                .then(response => response.text())  // Obtén el texto como respuesta
+                .then(response => response.json())  
                 .then(data => {
-        console.log(data);  // Debería imprimir "Hola"
+        console.log(data);  
     })
             } catch (error) {
                 console.error('Error al obtener los usuarios:', error);

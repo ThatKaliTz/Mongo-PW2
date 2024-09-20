@@ -21,12 +21,19 @@ namespace MongoApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Juego>>> Getjuegos()
+        public async Task<ActionResult<IEnumerable<Juego>>> GetJuegos()
         {
             var juegos = await _juegosCollection.Find(_ => true).ToListAsync();
             return Ok(juegos);
 
             
+        }
+
+                [HttpPost]
+        public async Task<ActionResult<Juego>> CreateJuego(Juego nuevoJuego)
+        {
+            await _juegosCollection.InsertOneAsync(nuevoJuego); // Inserta el nuevo usuario en la colección
+            return CreatedAtAction(nameof(GetJuegos), new { id = nuevoJuego.Id }, nuevoJuego);
         }
     }
 }

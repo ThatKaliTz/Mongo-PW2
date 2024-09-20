@@ -33,5 +33,19 @@ namespace MongoApi.Controllers
             await _usuariosCollection.InsertOneAsync(nuevoUsuario); // Inserta el nuevo usuario en la colección
             return CreatedAtAction(nameof(GetUsuarios), new { id = nuevoUsuario.Id }, nuevoUsuario);
         }
+        [HttpDelete("{user}")]
+        public async Task<IActionResult> DeleteUsuario(string user)
+        {
+            var filter = Builders<Usuario>.Filter.Eq("User", user);
+            var result = await _usuariosCollection.DeleteOneAsync(filter);
+
+            if (result.DeletedCount == 0)
+            {
+                return NotFound(new { message = "Usuario no encontrado" });
+            }
+
+            return Ok(new { message = "Usuario eliminado correctamente" });
+        }
+
     }
 }

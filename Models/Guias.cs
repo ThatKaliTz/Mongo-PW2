@@ -6,8 +6,7 @@ namespace MongoApi.Models
     public class Guia
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)] // Convierte automáticamente ObjectId a string
-        public string Id { get; set; }
+        public ObjectId Id { get; set; }
 
         [BsonElement("idusuario")]
         public string IdUsuario { get; set; }

@@ -6,15 +6,14 @@ namespace MongoApi.Models
     public class Juego
     {
         [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)] // Convierte automáticamente ObjectId a string
-        public string Id { get; set; }
+        public ObjectId Id { get; set; }
 
         [BsonElement("nombre")]
         public string Nombre { get; set; }
 
         [BsonElement("consola")]
 
-        public string Apellido { get; set; }
+        public string Consola { get; set; }
 
         [BsonElement("foto")]
 

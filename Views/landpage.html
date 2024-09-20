@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de Reviews de Videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1rem;
+}
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 3px;
+}
+
+nav .search-bar button {
+    padding: 0.5rem;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .menu a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+nav .menu a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+nav .auth button {
+    padding: 0.5rem 1rem;
+    background-color: #ff4f4f;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.carousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 6s infinite;
+}
+
+.slide {
+    width: 100%;
+    gap: 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit:contain;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-33%); }
+    40% { transform: translateX(-66%); }
+    60% { transform: translateX(-66%); }
+    100% { transform: translateX(0); }
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Puedes ajustar el número de columnas */
+    gap: 1rem;
+    padding: 2rem;
+    margin-top: 200px;
+}
+
+.game-item {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center;     /* Centra verticalmente el contenido si lo necesitas */
+}
+
+.game-item img {
+    width: 70%; /* Ajusta el tamaño como prefieras */
+    height: 100%; /* Mantén la proporción de la imagen */
+    border-radius: 10px;
+    transition: transform 0.3s;
+    margin: auto; /* Esto asegura que la imagen esté centrada */
+}
+
+.game-item img:hover {
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+
+     <!-- Navbar -->
+     <nav>
+        <div class="logo">
+            <img src="/img/logopw22.JPG" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="menu">
+            <a href="#">Usuario</a>
+            <a href="#">Juegos</a>
+        </div>
+        <div class="auth">
+            <button>Ingresar</button>
+            <button>Registrarse</button>
+        </div>
+    </nav>
+
+
+    <!-- Carrusel -->
+    <div class="carousel">
+        <div class="slides">
+            <div class="slide"><img src="https://npr.brightspotcdn.com/dims4/default/2ac3bf0/2147483647/strip/true/crop/616x353+0+0/resize/880x504!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5e%2F18%2F3075f4a34ace9caaac2f434c2b03%2Fhollow-knight-wide-cover.jpeg" alt="Juego 1"></div>
+            <div class="slide"><img src="https://i1.wp.com/www.loadingdeveloper.com/wp-content/uploads/2018/01/Undertale-Cover-art.jpg?fit=1280%2C720&ssl=1" alt="Juego 2"></div>
+            <div class="slide"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXl6QURntao-cOO1X3aavxVv49cNYZTd6iow&s" alt="Juego 3"></div>
+        </div>
+    </div>
+
+    <!-- Sección de imágenes 3x3 -->
+    <section class="game-grid">
+        <div class="game-item"><img src="https://personacentral.com/wp-content/uploads/2017/07/Character-Anthology-Cover.jpg" alt="Juego 1"></div>
+        <div class="game-item"><img src="https://i.pinimg.com/736x/3e/bf/5f/3ebf5fc573210a5f773f215b9d9a6553.jpg" alt="Juego 2"></div>
+        <div class="game-item"><img src="https://store-images.s-microsoft.com/image/apps.43635.13952396613602306.82d88064-acec-4fa5-80cf-a6bccb1188e8.533a461e-f639-4011-81c0-ab32ee003e4f" alt="Juego 3"></div>
+        <div class="game-item"><img src="https://i.redd.it/gl0jcz2p9tjb1.jpg" alt="Juego 4"></div>
+        <div class="game-item"><img src="https://products.eneba.games/resized-products/TNKERVlazAuNEXv36n8O7IJLT3QQhY0TjrFUUMX_NRc_350x200_3x-0.jpeg" alt="Juego 5"></div>
+        <div class="game-item"><img src="https://e.snmc.io/lk/l/x/3ac9502dc7c9faefe63e179816b7ff9b/11753474" alt="Juego 6"></div>
+        <div class="game-item"><img src="https://assetsio.gnwcdn.com/co46s3.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="Juego 7"></div>
+        <div class="game-item"><img src="https://www.giantbomb.com/a/uploads/scale_medium/33/338034/3296310-9799857891-libra.jpg" alt="Juego 8"></div>
+        <div class="game-item"><img src="https://cdn1.epicgames.com/offer/3428aaab2c674c98b3acb789dcfaa548/EGS_FalloutNewVegasUltimateEdition_ObsidianEntertainment_Editions_S2_1200x1600-45b1c7c6093bfc78539a8faeead2c929" alt="Juego 9"></div>
+    </section>
+
+</body>
+</html>

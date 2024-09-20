@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario - GameReviews</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1rem;
+}
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-bar input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 3px;
+}
+
+nav .search-bar button {
+    padding: 0.5rem;
+    background-color: #444;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .menu a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+nav .menu a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+nav .auth button {
+    padding: 0.5rem 1rem;
+    background-color: #ff4f4f;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 2rem;
+}
+
+.tabs a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.tabs a:hover, .tabs a.active {
+    border-bottom: 2px solid yellow;
+}
+
+.game-gallery {
+    padding: 2rem;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.filter-options p {
+    margin-right: 1rem;
+}
+
+.filter-options button {
+    background-color: #222;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.game-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.game-item img:hover {
+    transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <img src="/img/logopw22.JPG" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="menu">
+            <a href="#">Usuario</a>
+            <a href="#">Juegos</a>
+        </div>
+        <div class="auth">
+            <button>Ingresar</button>
+            <button>Registrarse</button>
+        </div>
+    </nav>
+
+    <!-- Perfil de Usuario -->
+    <section class="profile">
+        <div class="profile-info">
+            <img src="/img/ayo-wtf.gif" alt="Foto de perfil">
+            <h2>Usuario</h2>
+            <p>@Us3r_</p>
+        </div>
+        <div class="tabs">
+            <a href="#">Perfil</a>
+            <a href="#" class="active">Juegos</a>
+            <a href="#">Reviews</a>
+            <a href="#">Listas</a>
+        </div>
+    </section>
+
+    <!-- Galería de juegos -->
+    <section class="game-gallery">
+        <div class="filter-options">
+            <p>9 Games</p>
+            <div class="sort-options">
+                <button>Aplicar filtros</button>
+                <button></button>
+                <button>Ordenar por calif.</button>
+            </div>
+        </div>
+
+        <!-- Grid de Juegos -->
+        <div class="grid">
+            <div class="game-item"><img src="https://personacentral.com/wp-content/uploads/2017/07/Character-Anthology-Cover.jpg" alt="Juego 1"></div>
+            <div class="game-item"><img src="https://i.pinimg.com/736x/3e/bf/5f/3ebf5fc573210a5f773f215b9d9a6553.jpg" alt="Juego 2"></div>
+            <div class="game-item"><img src="https://store-images.s-microsoft.com/image/apps.43635.13952396613602306.82d88064-acec-4fa5-80cf-a6bccb1188e8.533a461e-f639-4011-81c0-ab32ee003e4f" alt="Juego 3"></div>
+            <div class="game-item"><img src="https://i.redd.it/gl0jcz2p9tjb1.jpg" alt="Juego 4"></div>
+            <div class="game-item"><img src="https://products.eneba.games/resized-products/TNKERVlazAuNEXv36n8O7IJLT3QQhY0TjrFUUMX_NRc_350x200_3x-0.jpeg" alt="Juego 5"></div>
+            <div class="game-item"><img src="https://e.snmc.io/lk/l/x/3ac9502dc7c9faefe63e179816b7ff9b/11753474" alt="Juego 6"></div>
+            <div class="game-item"><img src="https://assetsio.gnwcdn.com/co46s3.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="Juego 7"></div>
+            <div class="game-item"><img src="https://www.giantbomb.com/a/uploads/scale_medium/33/338034/3296310-9799857891-libra.jpg" alt="Juego 8"></div>
+            <div class="game-item"><img src="https://cdn1.epicgames.com/offer/3428aaab2c674c98b3acb789dcfaa548/EGS_FalloutNewVegasUltimateEdition_ObsidianEntertainment_Editions_S2_1200x1600-45b1c7c6093bfc78539a8faeead2c929" alt="Juego 9"></div>
+        </div>
+    </section>
+
+</body>
+</html>
