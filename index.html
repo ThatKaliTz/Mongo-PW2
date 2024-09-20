@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+</head>
+<body>
+    <h1>Lista de Usuarios</h1>
+    <ul id="usuarios"></ul>
+
+    <script>
+        async function obtenerUsuarios() {
+            try {
+                fetch('http://localhost:5119/api/usuarios')
+                .then(response => response.text())  // Obtén el texto como respuesta
+                .then(data => {
+        console.log(data);  // Debería imprimir "Hola"
+    })
+            } catch (error) {
+                console.error('Error al obtener los usuarios:', error);
+            }
+        }
+
+        obtenerUsuarios();
+    </script>
+</body>
+</html>
