@@ -173,6 +173,20 @@
 
     obtenerUsuarios();
 
+    async function obtenerJuego() {
+      try {
+        fetch("http://localhost:5119/api/juegos")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+          });
+      } catch (error) {
+        console.error("Error al obtener los juegos:", error);
+      }
+    }
+
+    obtenerJuego();
+
     function enviarUsuario() {
       const usuario = {
         nombre: document.getElementById("nombre").value,

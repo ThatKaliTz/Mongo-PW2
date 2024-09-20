@@ -26,14 +26,29 @@ namespace MongoApi.Controllers
             var juegos = await _juegosCollection.Find(_ => true).ToListAsync();
             return Ok(juegos);
 
-            
+
         }
 
-                [HttpPost]
+        [HttpPost]
         public async Task<ActionResult<Juego>> CreateJuego(Juego nuevoJuego)
         {
             await _juegosCollection.InsertOneAsync(nuevoJuego); // Inserta el nuevo usuario en la colección
             return CreatedAtAction(nameof(GetJuegos), new { id = nuevoJuego.Id }, nuevoJuego);
+        }
+
+        [HttpDelete("{nombreJuego}")]
+
+        public async Task<IActionResult> DeleteJuego(string nombre)
+        {
+            var filter = Builders<Juego>.Filter.Eq("Nombre", nombre);
+            var result = await _juegosCollection.DeleteOneAsync(filter);
+
+            if (result.DeletedCount == 0)
+            {
+                return NotFound(new { message = "Juego no encontrado" });
+            }
+
+            return Ok(new { message = "Juego eliminado correctamente" });
         }
     }
 }

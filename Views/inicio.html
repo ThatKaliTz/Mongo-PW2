@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,5 +24,238 @@
 
         obtenerUsuarios();
     </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información del Juego</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2b2b2b;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #000;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header a {
+      color: #fff;
+      margin-right: 20px;
+      text-decoration: none;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .game-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .game-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .game-stats div {
+      text-align: center;
+    }
+
+    .game-stats div span {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .game-overview {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .game-overview h2 {
+      margin-top: 0;
+    }
+
+    .game-details {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .game-details div {
+      flex: 1;
+      padding: 10px;
+      background-color: #1c1c1c;
+      margin-right: 10px;
+      border-radius: 10px;
+    }
+
+    .game-details div:last-child {
+      margin-right: 0;
+    }
+
+    .game-guide {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .game-guide a {
+      color: #1da1f2;
+      text-decoration: none;
+    }
+
+    .game-guide a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .side-panel {
+      float: right;
+      width: 250px;
+      background-color: #1c1c1c;
+      padding: 20px;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+
+    .side-panel img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .join-now-btn {
+      background-color: #e21157;
+      padding: 10px;
+      color: #fff;
+      text-align: center;
+      display: inline-block;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .join-now-btn:hover {
+      background-color: #aa1044;
+    }
+
+    .platform-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <a href="#">Buscar</a>
+    <a href="#">Usuario</a>
+    <a href="#">Juegos</a>
+  </div>
+  <div>
+    <a href="#">Iniciar Sesión</a>
+    <a href="#">Registrarse</a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="game-title">Persona 3 Reload</div>
+
+  <div class="game-stats">
+    <div>
+      <span>283</span> Playing
+    </div>
+    <div>
+      <span>1.7K</span> Backlogs
+    </div>
+    <div>
+      <span>36</span> Replays
+    </div>
+    <div>
+      <span>90%</span> Rated
+    </div>
+    <div>
+      <span>2K</span> Beat
+    </div>
+  </div>
+
+  <div class="game-overview">
+    <h2>Overview</h2>
+    <p>Dive into the Dark Hour and awaken the depths of your heart. Persona 3 Reload is a captivating reimagining of the genre-defining RPG...</p>
+  </div>
+
+  <div class="game-details">
+    <div>
+      <h3>Main Story</h3>
+      <p>64 Hours</p>
+    </div>
+    <div>
+      <h3>Main + Sides</h3>
+      <p>84 Hours</p>
+    </div>
+    <div>
+      <h3>Completionist</h3>
+      <p>94.5 Hours</p>
+    </div>
+    <div>
+      <h3>All Styles</h3>
+      <p>82 Hours</p>
+    </div>
+  </div>
+
+  <div class="side-panel">
+    <img src="https://via.placeholder.com/250" alt="Persona 3 Reload">
+    <a href="#" class="join-now-btn">Join Now!</a>
+  </div>
+
+  <div class="game-guide">
+    <a href="#">Persona 3 Reload Walkthrough</a>
+    <a href="#">Missing Person Locations and Dates</a>
+    <a href="#">Boss Guides</a>
+    <a href="#">Treasure Hands Guide</a>
+    <a href="#">Characters</a>
+    <a href="#">How to Fuse Titania</a>
+    <a href="#">Social Links Guide</a>
+    <a href="#">How to Fuse Siegfried</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>Game Cruiser &copy; 2024</p>
+</footer>
+
 </body>
 </html>
