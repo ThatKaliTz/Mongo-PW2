@@ -26,5 +26,12 @@ namespace MongoApi.Controllers
             var usuarios = await _usuariosCollection.Find(_ => true).ToListAsync();
             return Ok(usuarios);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<Usuario>> CreateUsuario(Usuario nuevoUsuario)
+        {
+            await _usuariosCollection.InsertOneAsync(nuevoUsuario); // Inserta el nuevo usuario en la colección
+            return CreatedAtAction(nameof(GetUsuarios), new { id = nuevoUsuario.Id }, nuevoUsuario);
+        }
     }
 }

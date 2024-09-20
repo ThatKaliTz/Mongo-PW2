@@ -9,23 +9,23 @@ namespace MongoApi.Models
         [BsonRepresentation(BsonType.ObjectId)] // Convierte automáticamente ObjectId a string
         public string Id { get; set; }
 
-        [BsonElement("nombre")]
+        [BsonElement("idusuario")]
         public string Nombre { get; set; }
 
-        [BsonElement("apellido")]
+        [BsonElement("titulo")]
 
-        public string Apellido { get; set; }
+        public string Titulo { get; set; }
 
-        [BsonElement("edad")]
+        [BsonElement("cantidad")]
 
-        public int Edad { get; set; }
+        public int cantidad { get; set; }
 
-        [BsonElement("user")]
+        [BsonElement("date")]
 
-        public string User { get; set; }
+        public string Date { get; set; }
 
-        [BsonElement("password")]
+        [BsonElement("juegos")]
 
-        public string password { get; set; }
+        public string Juegos { get; set; }
     }
 }

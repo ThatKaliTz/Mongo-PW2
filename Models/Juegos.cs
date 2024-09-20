@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace MongoApi.Models
 {
-    public class Usuario
+    public class Juego
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)] // Convierte automáticamente ObjectId a string
@@ -12,20 +12,24 @@ namespace MongoApi.Models
         [BsonElement("nombre")]
         public string Nombre { get; set; }
 
-        [BsonElement("apellido")]
+        [BsonElement("consola")]
 
         public string Apellido { get; set; }
 
-        [BsonElement("edad")]
+        [BsonElement("foto")]
 
-        public int Edad { get; set; }
+        public string Foto { get; set; }
 
-        [BsonElement("user")]
+        [BsonElement("genero")]
 
-        public string User { get; set; }
+        public string Genero { get; set; }
 
-        [BsonElement("password")]
+        [BsonElement("anio")]
 
-        public string password { get; set; }
+        public string Anio { get; set; }
+
+        [BsonElement("sinopsis")]
+
+        public string Sinopsis { get; set; }
     }
 }
