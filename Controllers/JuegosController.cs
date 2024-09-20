@@ -36,7 +36,7 @@ namespace MongoApi.Controllers
             return CreatedAtAction(nameof(GetJuegos), new { id = nuevoJuego.Id }, nuevoJuego);
         }
 
-        [HttpDelete("{nombreJuego}")]
+        [HttpDelete("{nombre}")]
 
         public async Task<IActionResult> DeleteJuego(string nombre)
         {
