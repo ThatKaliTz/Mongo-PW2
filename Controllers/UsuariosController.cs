@@ -47,5 +47,18 @@ namespace MongoApi.Controllers
             return Ok(new { message = "Usuario eliminado correctamente" });
         }
 
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] Usuario usuario)
+        {
+            var filter = Builders<Usuario>.Filter.Eq("Email", usuario.Email);
+            var userInDb = await _usuariosCollection.Find(filter).FirstOrDefaultAsync();
+
+            if (userInDb == null || userInDb.password != usuario.password)
+            {
+                return Unauthorized(new { message = "Invalid credentials" });
+            }
+
+            return Ok(new { message = "Login successful", user = userInDb.User });
+        }
     }
 }
