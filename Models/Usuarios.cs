@@ -30,5 +30,9 @@ namespace MongoApi.Models
         [BsonElement("password")]
 
         public string password { get; set; }
+
+        [BsonElement("admin")]
+
+        public bool admin { get; set; }
     }
 }

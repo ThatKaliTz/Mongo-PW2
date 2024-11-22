@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\images\\OIG1.png",
+      "PackagePath": "staticwebassets\\images\\OIG1.png"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\images\\logopw2.JPG",
+      "PackagePath": "staticwebassets\\images\\logopw2.JPG"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\images\\logopw22.JPG",
+      "PackagePath": "staticwebassets\\images\\logopw22.JPG"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\Diagrama.jpeg",
+      "PackagePath": "staticwebassets\\juegos\\Diagrama.jpeg"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\FB_IMG_1702241164370.jpg",
+      "PackagePath": "staticwebassets\\juegos\\FB_IMG_1702241164370.jpg"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\GameOverr.png",
+      "PackagePath": "staticwebassets\\juegos\\GameOverr.png"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\HPBAR3.png",
+      "PackagePath": "staticwebassets\\juegos\\HPBAR3.png"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\Pausaa.png",
+      "PackagePath": "staticwebassets\\juegos\\Pausaa.png"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\hqdefault.png",
+      "PackagePath": "staticwebassets\\juegos\\hqdefault.png"
+    },
+    {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\profile.JPG",
+      "PackagePath": "staticwebassets\\juegos\\profile.JPG"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MongoApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.MongoApi.props",
+      "PackagePath": "build\\MongoApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.MongoApi.props",
+      "PackagePath": "buildMultiTargeting\\MongoApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.MongoApi.props",
+      "PackagePath": "buildTransitive\\MongoApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

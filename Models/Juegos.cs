@@ -30,5 +30,8 @@ namespace MongoApi.Models
         [BsonElement("sinopsis")]
 
         public string Sinopsis { get; set; }
+    
+        [BsonElement("calificacion")]
+        public string Calificacion { get; set; }
     }
 }

@@ -44,3 +44,4 @@ C:\Users\Rogelio\source\mongo-dotnet\MongoApi\obj\Debug\net7.0\refint\MongoApi.d
 C:\Users\Rogelio\source\mongo-dotnet\MongoApi\obj\Debug\net7.0\MongoApi.pdb
 C:\Users\Rogelio\source\mongo-dotnet\MongoApi\obj\Debug\net7.0\MongoApi.genruntimeconfig.cache
 C:\Users\Rogelio\source\mongo-dotnet\MongoApi\obj\Debug\net7.0\ref\MongoApi.dll
+c:\Users\Rogelio\source\mongo-dotnet\MongoApi\bin\Debug\net7.0\MongoApi.staticwebassets.runtime.json

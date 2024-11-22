@@ -27,7 +27,7 @@ if (app.Environment.IsDevelopment())
     app.UseCors("AllowAllOrigins");
 
     app.UseRouting();
-
+app.UseStaticFiles(); // Habilita wwwroot como carpeta de archivos estáticos
 
 app.UseHttpsRedirection();
 
