@@ -8,20 +8,23 @@ namespace MongoApi.Models
         [BsonId]
         public ObjectId Id { get; set; }
 
-        [BsonElement("idusuario")]
-        public string IdUsuario { get; set; }
+        [BsonElement("usuario")]
+        public string Usuario { get; set; }
 
-        [BsonElement("idjuego")]
+        [BsonElement("juego")]
 
-        public string IdJuego { get; set; }
+        public string Juego { get; set; }
+
+        [BsonElement("titulo")]
+        public string Titulo { get; set; }
 
         [BsonElement("calificacion")]
 
         public int Calificacion { get; set; }
 
-        [BsonElement("descripcion")]
+        [BsonElement("contenido")]
 
-        public string Descripcion { get; set; }
+        public string Contenido { get; set; }
 
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MmZ8WG08+xerUCz+BxqLGWWcuC/RmFaBuyS9Wt5pWk4=",
+  "Hash": "Yi5JSoXsFt3VK864bEnNhd3KrdFVJoa93qf8ci0hmQs=",
   "Source": "MongoApi",
   "BasePath": "_content/MongoApi",
   "Mode": "Default",
@@ -185,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\juegos\\profile.JPG"
+    },
+    {
+      "Identity": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\roberto.png",
+      "SourceId": "MongoApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\",
+      "BasePath": "_content/MongoApi",
+      "RelativePath": "juegos/roberto.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\juegos\\roberto.png"
     }
   ]
 }

@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\juegos\\profile.JPG"
     },
     {
+      "Id": "c:\\Users\\Rogelio\\source\\mongo-dotnet\\MongoApi\\wwwroot\\juegos\\roberto.png",
+      "PackagePath": "staticwebassets\\juegos\\roberto.png"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.MongoApi.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

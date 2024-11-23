@@ -33,5 +33,14 @@ namespace MongoApi.Models
     
         [BsonElement("calificacion")]
         public string Calificacion { get; set; }
+
+        [BsonElement("dmain")]
+        public string Dmain { get; set; }
+        [BsonElement("dcomp")]
+        public string Dcomp { get; set; }
+        [BsonElement("developer")]
+        public string Developer { get; set; }
+        [BsonElement("publisher")]
+        public string Publisher { get; set; }
     }
 }
